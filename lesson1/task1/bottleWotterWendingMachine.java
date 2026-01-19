@@ -1,5 +1,5 @@
 package lesson1.task1;
-
+import lesson1.task1.bottleWater;
 import java.util.List;
 
 public class bottleWotterWendingMachine implements vendingMachine{
@@ -21,10 +21,10 @@ public class bottleWotterWendingMachine implements vendingMachine{
         return null;
     }
     
-    public bottleWater getProduct(String name,int volume){
+    public bottleWater getProduct(String name,double volume){
         for(product product:productList){
             if(product instanceof bottleWater){
-                if(product.getName().equals(name)&&((bottleWater) product.getVolume()==volume){
+                if((product.getName().equals(name))&&(((bottleWater) product).getVolume()==volume)){
                     return (bottleWater) product;
                 }
             }

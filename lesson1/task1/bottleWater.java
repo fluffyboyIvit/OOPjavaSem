@@ -3,14 +3,14 @@
 
 public class bottleWater extends product {
 
-    private int volume;
+    private double volume;
 
 
 
     public bottleWater(String name, int price) {
         super(name, price);
     }
-    public int getVolume() {
+    public double getVolume() {
         return volume;
     }
 
